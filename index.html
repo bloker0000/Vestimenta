@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestimenta | Home</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/custom.css">
+    <style>
+        :root {
+            --beige: #C8B8B1;
+            --dark: #272121;
+            --taupe: #BDAA9F;
+            --gray: #CEC9CC;
+            --blue: #6D7D97;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-white text-vestimenta-dark overflow-x-hidden">
+    <nav class="fixed w-full z-50 transition-all duration-300">
+        <div class="nav-background"></div>
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center">
+                    <div class="logo-container">
+                        <img src="src/assets/media/logo_notext.png" alt="Vestimenta Logo" class="h-12">
+                    </div>
+                    <div class="ml-3">
+                        <span
+                            class="block text-xl md:text-2xl font-display uppercase tracking-wider leading-none text-white">
+                            <span class="text-white">Vesti</span><span class="text-vestimenta-beige">menta</span>
+                        </span>
+                        <span class="text-xs uppercase tracking-widest text-white">Sustainable Fashion</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="#event-info" class="nav-link section-link">Over</a></li>
+                        <li><a href="#clothing" class="nav-link section-link">Kleding</a></li>
+                        <li><a href="#sustainability" class="nav-link section-link">Duurzaamheid</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <button class="hamburger-fancy focus:outline-none" id="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu-fancy" id="mobile-menu">
+            <div class="mobile-menu-background"></div>
+            <div class="container mx-auto">
+                <div class="mobile-nav-section">
+                    <h3 class="mobile-section-title">Menu</h3>
+                    <div class="mobile-nav-links">
+                        <a href="index.html" class="mobile-nav-link active">Home</a>
+                        <a href="#event-info" class="mobile-nav-link">Over Ons</a>
+                        <a href="#clothing" class="mobile-nav-link">Collectie</a>
+                        <a href="#sustainability" class="mobile-nav-link">Duurzaamheid</a>
+                        <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-section">
+                    <h3 class="mobile-section-title">Contact</h3>
+                    <div class="mobile-contact-info">
+                        <a href="tel:0101234567" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span class="text-white">010-1234567</span>
+                        </a>
+                        <a href="mailto:info@vestimenta.nl" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="text-white">info@vestimenta.nl</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Kruiskade+88+Rotterdam" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="text-white">Kruiskade 88, Rotterdam</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section relative h-screen flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); filter: brightness(0.7);">
+        </div>
+        <div class="absolute inset-0 bg-vestimenta-dark bg-opacity-40"></div>
+        <div class="hero-pattern"></div>
+
+        <div class="container mx-auto px-4 z-10 hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center max-w-2xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-display uppercase tracking-wide mb-6">Opening <span
+                        class="text-vestimenta-beige">Vestimenta</span></h1>
+                <h2 class="text-xl md:text-2xl mb-8 font-sans">08-08-2024 | Kruiskade 88, Rotterdam</h2>
+                <a href="#event-info" class="btn-primary inline-block px-6 py-2 text-sm">Meer info</a>
+            </div>
+        </div>
+
+        <div class="wave-divider absolute bottom-0 left-0 w-full overflow-hidden"
+            style="transform: rotate(180deg); height: 85px; margin-bottom: -1px;">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none" style="height: 85px;">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="event-info" class="py-20 bg-white relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display uppercase tracking-wide mb-4" data-aos="fade-up">Openingsevenement</h2>
+                <div class="w-24 h-1 bg-vestimenta-taupe mx-auto" data-aos="fade-up" data-aos-delay="100"></div>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h3 class="text-2xl font-display uppercase mb-6 text-vestimenta-taupe">Op 8 augustus 2024 openen
+                            wij onze deuren!</h3>
+                        <p class="text-lg mb-6">Kom tussen 17:00 en 23:00 langs voor een exclusieve ervaring die je niet
+                            wilt missen. Bij Vestimenta vieren we onze opening met stijl en duurzame flair.</p>
+
+                        <div class="timeline mb-8">
+                            <div class="timeline-item">
+                                <h4 class="font-display uppercase font-bold">17:00 - Opening</h4>
+                                <p>Deuren openen & welkomstdrankje</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-display uppercase font-bold">18:00 - DJ-set</h4>
+                                <p>Live muziek door lokale DJ's</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-display uppercase font-bold">19:30 - Fashion talk</h4>
+                                <p>Mini-lezing over duurzame mode</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-display uppercase font-bold">21:00 - Live band</h4>
+                                <p>Akoestische set van 'The Sustainables'</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-vestimenta-beige bg-opacity-10 p-6 rounded-lg border-l-4 border-vestimenta-taupe">
+                            <h4 class="font-display uppercase font-bold mb-2">Speciale verrassingen:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-cocktail"></i></span>
+                                    <span>Signature cocktails & mocktails</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-tag"></i></span>
+                                    <span>20% korting op je eerste aankoop</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-hat-cowboy"></i></span>
+                                    <span>Gratis exclusieve Vestimenta cap voor de eerste 100 bezoekers</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-camera"></i></span>
+                                    <span>Photo booth met professionele fotograaf</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left" data-aos-duration="1000">
+                        <div class="sticky top-32">
+                            <div class="mb-8 rounded-lg overflow-hidden shadow-lg" style="height: 350px;">
+                                <iframe class="w-full h-full"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.493379132087!2d4.470102415947174!3d51.92271797970405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a619e57083%3A0x62b1d5c8e94bc762!2sKruiskade%2C%20Rotterdam!5e0!3m2!1sen!2snl!4v1656934291228!5m2!1sen!2snl"
+                                    allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+
+                            <div class="bg-vestimenta-blue bg-opacity-10 p-6 rounded-lg">
+                                <h4 class="font-display uppercase font-bold text-vestimenta-blue mb-4">Locatie &
+                                    Bereikbaarheid</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <span class="text-vestimenta-blue mt-1 mr-3"><i
+                                                class="fas fa-map-marker-alt"></i></span>
+                                        <span>Kruiskade 88, 3012 EH Rotterdam</span>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span class="text-vestimenta-blue mt-1 mr-3"><i class="fas fa-train"></i></span>
+                                        <span>5 min. lopen vanaf Rotterdam Centraal</span>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span class="text-vestimenta-blue mt-1 mr-3"><i
+                                                class="fas fa-parking"></i></span>
+                                        <span>Parkeergarage op 200m afstand</span>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span class="text-vestimenta-blue mt-1 mr-3"><i
+                                                class="fas fa-bicycle"></i></span>
+                                        <span>Fietsenstalling voor de deur</span>
+                                    </div>
+                                </div>
+
+                                <a href="https://maps.google.com/?q=Kruiskade+88+Rotterdam" target="_blank"
+                                    class="inline-block mt-6 text-vestimenta-blue hover:text-vestimenta-taupe transition-colors">
+                                    <span class="flex items-center">
+                                        <span>Route plannen</span>
+                                        <i class="fas fa-arrow-right ml-2"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="angled-section-bottom bg-vestimenta-beige bg-opacity-10 h-32"></div>
+    </section>
+
+    <section id="clothing" class="py-20 bg-vestimenta-beige bg-opacity-10 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display uppercase tracking-wide mb-4" data-aos="fade-up">Ontdek onze collectie
+                </h2>
+                <div class="w-24 h-1 bg-vestimenta-taupe mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+                <p class="text-xl text-vestimenta-dark max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">Bij
+                    Vestimenta vind je een zorgvuldig samengestelde collectie van tijdloze, duurzame kledingstukken die
+                    stijl combineren met een bewuste levensstijl.</p>
+            </div>
+
+            <div class="carousel-container overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="carousel-inner flex space-x-6 py-4 px-1 snap-x snap-mandatory overflow-x-auto">
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1594633313593-bab3825d0caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Broeken</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1483&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Jurken</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1618354691792-d1d42acfd860?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">T-shirts</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Jassen</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Schoenen</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Accessoires</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1065&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Sneakers</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="category-card">
+                        <a href="#event-info" class="block h-full">
+                            <div class="bg-cover bg-center h-64 rounded-lg"
+                                style="background-image: url('https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80');">
+                                <div class="overlay">
+                                    <h3 class="font-display">Vintage</h3>
+                                    <span class="view-more">Geïnteresseerd?</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:flex justify-center mt-8 space-x-4">
+                <button class="carousel-button prev bg-vestimenta-taupe hover:bg-vestimenta-beige">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next bg-vestimenta-taupe hover:bg-vestimenta-beige">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="mt-20">
+                <h3 class="text-2xl font-display uppercase text-center mb-12" data-aos="fade-up">Uitgelichte collecties
+                </h3>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-soft p-6 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-hover"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-vestimenta-taupe text-3xl mb-4">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 class="font-display uppercase text-xl mb-2">Eco-bewust</h4>
+                        <p class="text-vestimenta-dark mb-4">Onze nieuwste collectie gemaakt van gerecyclede materialen
+                            en organisch katoen. Stijlvol én duurzaam.</p>
+                        <a href="#clothing"
+                            class="text-vestimenta-taupe hover:text-vestimenta-blue transition-colors inline-flex items-center">
+                            <span>Ontdek meer</span>
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-soft p-6 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-hover"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-vestimenta-taupe text-3xl mb-4">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4 class="font-display uppercase text-xl mb-2">Essentials</h4>
+                        <p class="text-vestimenta-dark mb-4">Tijdloze basics die niet in je garderobe mogen ontbreken.
+                            Gemaakt om jaren mee te gaan.</p>
+                        <a href="#clothing"
+                            class="text-vestimenta-taupe hover:text-vestimenta-blue transition-colors inline-flex items-center">
+                            <span>Ontdek meer</span>
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-soft p-6 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-hover"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-vestimenta-taupe text-3xl mb-4">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h4 class="font-display uppercase text-xl mb-2">Vintage edit</h4>
+                        <p class="text-vestimenta-dark mb-4">Zorgvuldig geselecteerde vintage stukken die een tweede
+                            leven verdienen. Uniek en karaktervol.</p>
+                        <a href="#clothing"
+                            class="text-vestimenta-taupe hover:text-vestimenta-blue transition-colors inline-flex items-center">
+                            <span>Ontdek meer</span>
+                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability" class="py-20 bg-white relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-display uppercase tracking-wide mb-4" data-aos="fade-up">Onze Missie</h2>
+                <div class="w-24 h-1 bg-vestimenta-taupe mx-auto mb-6" data-aos="fade-up" data-aos-delay="100"></div>
+                <p class="text-xl text-vestimenta-dark max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    Vestimenta staat voor meer dan alleen mode. We geloven in een circulaire aanpak, duurzame materialen
+                    en het opbouwen van een community rond bewust consumeren.</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div data-aos="fade-right">
+                        <div class="relative mb-8">
+                            <div class="absolute -top-6 -left-6 w-20 h-20 bg-vestimenta-beige opacity-20 rounded-lg">
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -right-4 w-16 h-16 bg-vestimenta-taupe opacity-10 rounded-full">
+                            </div>
+                            <h3
+                                class="text-2xl font-display uppercase mb-6 text-vestimenta-taupe relative z-10 inline-block px-4 py-2 bg-gradient-to-r from-white to-vestimenta-beige bg-opacity-50 rounded-lg shadow-sm">
+                                Duurzaamheid in elke vezel</h3>
+                        </div>
+
+                        <p class="text-lg mb-8">Bij Vestimenta geloven we dat mode en duurzaamheid hand in hand gaan.
+                            Onze collecties zijn zorgvuldig samengesteld met respect voor mens en planeet.</p>
+
+                        <div class="space-y-8">
+                            <div
+                                class="feature-card bg-gradient-to-br from-white to-vestimenta-beige bg-opacity-5 border border-vestimenta-beige border-opacity-10 shadow-soft">
+                                <div class="icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h4 class="font-display uppercase text-lg mb-2">Gerecyclede materialen</h4>
+                                <p>Onze kledingstukken bevatten tot 85% gerecyclede materialen, van plastic flessen tot
+                                    afgekeurd textiel dat anders zou worden weggegooid.</p>
+                            </div>
+
+                            <div
+                                class="feature-card bg-gradient-to-br from-white to-vestimenta-beige bg-opacity-5 border border-vestimenta-beige border-opacity-10 shadow-soft">
+                                <div class="icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4 class="font-display uppercase text-lg mb-2">Eerlijke productie</h4>
+                                <p>We werken uitsluitend samen met fabrieken die eerlijke arbeidsomstandigheden en lonen
+                                    garanderen. Transparantie staat voorop.</p>
+                            </div>
+
+                            <div
+                                class="feature-card bg-gradient-to-br from-white to-vestimenta-beige bg-opacity-5 border border-vestimenta-beige border-opacity-10 shadow-soft">
+                                <div class="icon">
+                                    <i class="fas fa-solar-panel"></i>
+                                </div>
+                                <h4 class="font-display uppercase text-lg mb-2">Klimaatneutrale winkel</h4>
+                                <p>Onze winkel in Rotterdam draait volledig op hernieuwbare energie. Van zonnepanelen op
+                                    het dak tot LED-verlichting en duurzame inrichting.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-left">
+                        <div class="relative mb-8">
+                            <div class="absolute -top-6 -left-6 w-20 h-20 bg-vestimenta-blue opacity-20 rounded-lg">
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -right-4 w-16 h-16 bg-vestimenta-blue opacity-10 rounded-full">
+                            </div>
+                            <h3
+                                class="text-2xl font-display uppercase mb-6 text-vestimenta-blue relative z-10 inline-block px-4 py-2 bg-gradient-to-r from-white to-vestimenta-blue bg-opacity-50 rounded-lg shadow-sm">
+                                Word deel van onze community</h3>
+                        </div>
+
+                        <p class="text-lg mb-8">Vestimenta is meer dan een kledingwinkel – het is een community van
+                            gelijkgestemden die mode, duurzaamheid en creativiteit omarmen.</p>
+
+                        <div
+                            class="bg-gradient-to-br from-white to-vestimenta-blue bg-opacity-5 p-8 rounded-lg shadow-soft mb-8 border border-vestimenta-blue border-opacity-10">
+                            <h4 class="font-display uppercase text-lg mb-4">Komende events</h4>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-vestimenta-blue font-bold mr-4">15/08</span>
+                                    <div>
+                                        <span class="font-bold block">Kledingruil-evenement</span>
+                                        <span class="text-sm">Breng je oude favorieten en ga naar huis met nieuwe
+                                            schatten</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-vestimenta-blue font-bold mr-4">22/08</span>
+                                    <div>
+                                        <span class="font-bold block">Workshop: Duurzame stijltips</span>
+                                        <span class="text-sm">Leer hoe je een capsule-garderobe samenstelt</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-vestimenta-blue font-bold mr-4">05/09</span>
+                                    <div>
+                                        <span class="font-bold block">Modeshow: Herfstcollectie</span>
+                                        <span class="text-sm">Exclusieve preview voor community-leden</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-vestimenta-taupe bg-opacity-5 p-8 rounded-lg">
+                            <h4 class="font-display uppercase text-lg mb-4">Lid worden heeft voordelen</h4>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-check"></i></span>
+                                    <span>Early access tot nieuwe collecties</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-check"></i></span>
+                                    <span>Exclusieve kortingen voor leden</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-check"></i></span>
+                                    <span>Gratis deelname aan workshops</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-vestimenta-taupe mr-3"><i class="fas fa-check"></i></span>
+                                    <span>Priority inschrijving voor kledingruil-events</span>
+                                </li>
+                            </ul>
+                            <a href="contact.html"
+                                class="btn-primary bg-vestimenta-taupe hover:bg-vestimenta-beige">Word lid van de
+                                community</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 newsletter-section relative">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-display uppercase mb-4" data-aos="fade-up">Blijf op de hoogte</h2>
+                <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">Schrijf je in voor onze nieuwsbrief en
+                    ontvang als eerste updates over nieuwe collecties, events en exclusieve aanbiedingen.</p>
+
+                <form class="flex flex-col md:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <input type="email" id="newsletterEmail" placeholder="Je e-mailadres" class="form-input flex-grow"
+                        required>
+                    <button type="submit" id="newsletterSubmit"
+                        class="btn-primary bg-vestimenta-taupe hover:bg-vestimenta-beige">
+                        Aanmelden
+                    </button>
+                </form>
+
+                <p class="text-xs text-vestimenta-dark opacity-70 mt-4" data-aos="fade-up" data-aos-delay="300">Door je
+                    aan te melden ga je akkoord met ons privacybeleid. Je kunt je altijd uitschrijven via de link in
+                    onze e-mails.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-vestimenta-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <img src="src/assets/media/logo_notext.png" alt="Vestimenta Logo" class="h-10 mr-2 invert">
+                            <span class="text-xl font-display uppercase tracking-wider text-white">Vestimenta</span>
+                        </div>
+                        <p class="text-vestimenta-gray">Hip & duurzaam. Stijl met respect voor de planeet.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-display uppercase mb-4">Navigatie</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Home</a>
+                            </li>
+                            <li><a href="#event-info"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Over</a>
+                            </li>
+                            <li><a href="#clothing"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Kleding</a>
+                            </li>
+                            <li><a href="#sustainability"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Duurzaamheid</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-display uppercase mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i
+                                        class="fas fa-map-marker-alt"></i></span>
+                                <span class="text-vestimenta-gray">Kruiskade 88<br>3012 EH Rotterdam</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-phone"></i></span>
+                                <span class="text-vestimenta-gray">010-1234567</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-envelope"></i></span>
+                                <span class="text-vestimenta-gray">info@vestimenta.nl</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-clock"></i></span>
+                                <span class="text-vestimenta-gray">Ma-Za: 10:00 - 18:00<br>Zo: 12:00 - 17:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-vestimenta-dark border-opacity-20 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-vestimenta-gray mb-4 md:mb-0">&copy; 2025 Vestimenta - Alle rechten voorbehouden</p>
+                    <div class="flex flex-wrap justify-center space-x-6">
+                        <a href="javascript:void(0)" data-modal="privacyModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Privacy</a>
+                        <a href="javascript:void(0)" data-modal="voorwaardenModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Voorwaarden</a>
+                        <a href="javascript:void(0)" data-modal="cookiesModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast-notification">
+        <span class="icon"><i class="fas fa-check-circle"></i></span>
+        <span class="message">Succesvol aangemeld!</span>
+        <span class="close"><i class="fas fa-times"></i></span>
+    </div>
+
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Design Elementen</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">Kleurenpalet</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-beige"></div>
+                            <div>
+                                <p class="font-bold">Beige</p>
+                                <p class="text-sm text-gray-500">#C8B8B1</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-dark"></div>
+                            <div>
+                                <p class="font-bold text-vestimenta-dark">Donker</p>
+                                <p class="text-sm text-gray-500">#272121</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-taupe"></div>
+                            <div>
+                                <p class="font-bold">Taupe</p>
+                                <p class="text-sm text-gray-500">#BDAA9F</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-gray"></div>
+                            <div>
+                                <p class="font-bold">Grijs</p>
+                                <p class="text-sm text-gray-500">#CEC9CC</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-blue"></div>
+                            <div>
+                                <p class="font-bold">Blauw</p>
+                                <p class="text-sm text-gray-500">#6D7D97</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Typografie</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-sm text-gray-500 mb-2">Hoofdingen (TT Corals)</p>
+                            <p class="font-display text-3xl uppercase">VESTIMENTA</p>
+                            <p class="text-sm text-gray-500 mt-2">Gebruikt voor alle hoofdingen in hoofdletters</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-2">Basis tekst (Quicksand)</p>
+                            <p class="text-xl">Vestimenta - Hippe & duurzame mode</p>
+                            <p class="text-sm text-gray-500 mt-2">Gebruikt voor alle bodytekst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="voorwaardenModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Design Systeem</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">UI Componenten</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold mb-2">Knoppen</p>
+                            <button class="btn-primary bg-vestimenta-taupe hover:bg-vestimenta-beige my-2">Primaire
+                                knop</button>
+                            <button class="btn-secondary my-2">Secundaire knop</button>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Kaarten</p>
+                            <div
+                                class="bg-white rounded-lg shadow-soft p-3 border border-vestimenta-beige border-opacity-10">
+                                Voorbeeldkaart met schaduw en border
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Formulier elementen</p>
+                            <input type="text" class="form-input my-1 w-full" placeholder="Input veld">
+                            <select class="form-select my-1 w-full">
+                                <option>Dropdown optie</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Spacing & Animaties</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold mb-2">Secties</p>
+                            <p class="text-sm text-gray-600">Padding: 5rem (py-20)</p>
+                            <p class="text-sm text-gray-600">Margin tussen elementen: 2rem (my-8)</p>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Animaties</p>
+                            <p class="text-sm text-gray-600 mb-2">Hover effecten op knoppen en kaarten</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="transition-transform hover:-translate-y-1 duration-300 cursor-pointer p-2 bg-vestimenta-beige bg-opacity-10 rounded">
+                                    Hover me</div>
+                                <div
+                                    class="transition-all hover:shadow-lg duration-300 cursor-pointer p-2 bg-vestimenta-blue bg-opacity-10 rounded">
+                                    Shadow effect</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookiesModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Technische Informatie</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">Frameworks & Libraries</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><span class="font-bold">Tailwind CSS</span> - Voor styling en responsiveness</li>
+                        <li><span class="font-bold">AOS</span> - Voor scroll animaties</li>
+                        <li><span class="font-bold">Font Awesome</span> - Voor iconen</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Mappenstructuur</h3>
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm overflow-auto">
+                    /vestimenta/
+                    ├── public/
+                    │   ├── images/
+                    │   └── favicon.ico
+                    ├── src/
+                    │   ├── assets/
+                    │   │   ├── fonts/
+                    │   │   │   ├── Quicksand/ 
+                    │   │   │   └── tt_corals/
+                    │   │   └── media/
+                    │   │       ├── logo.png
+                    │   │       └── logo_notext.png
+                    │   ├── styles/
+                    │   │   ├── custom.css
+                    │   │   └── tailwind.css
+                    │   └── utils/
+                    │       ├── carousel.js
+                    │       ├── contactForm.js
+                    │       ├── modals.js
+                    │       ├── navigation.js
+                    │       └── toast.js
+                    ├── index.html
+                    ├── contact.html
+                    └── tailwind.config.js
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        try {
+            AOS.init({
+                once: true,
+                duration: 800,
+                disable: 'phone',
+                startEvent: 'DOMContentLoaded'
+            });
+        } catch (error) {
+            console.log('AOS initialization failed:', error);
+        }
+    </script>
+    <script src="src/utils/navigation.js"></script>
+    <script src="src/utils/carousel.js"></script>
+    <script src="src/utils/modals.js"></script>
+    <script src="src/utils/toast.js"></script>
+</body>
+
+</html>

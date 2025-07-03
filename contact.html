@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestimenta | Contact</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/custom.css">
+    <style>
+        :root {
+            --beige: #C8B8B1;
+            --dark: #272121;
+            --taupe: #BDAA9F;
+            --gray: #CEC9CC;
+            --blue: #6D7D97;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-white text-vestimenta-dark overflow-x-hidden contact-page">
+    <nav class="fixed w-full z-50 transition-all duration-300">
+        <div class="nav-background"></div>
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center">
+                    <div class="logo-container">
+                        <img src="src/assets/media/logo_notext.png" alt="Vestimenta Logo" class="h-12">
+                    </div>
+                    <div class="ml-3">
+                        <span
+                            class="block text-xl md:text-2xl font-display uppercase tracking-wider leading-none text-white">
+                            <span class="text-white">Vesti</span><span class="text-vestimenta-beige">menta</span>
+                        </span>
+                        <span class="text-xs uppercase tracking-widest text-white">Sustainable Fashion</span>
+                    </div>
+                </div>
+
+                <div class="hidden md:block">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="index.html#event-info" class="nav-link">Over</a></li>
+                        <li><a href="index.html#clothing" class="nav-link">Kleding</a></li>
+                        <li><a href="index.html#sustainability" class="nav-link">Duurzaamheid</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </div>
+
+                <button class="hamburger-fancy focus:outline-none" id="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu-fancy" id="mobile-menu">
+            <div class="mobile-menu-background"></div>
+            <div class="container mx-auto">
+                <div class="mobile-nav-section">
+                    <h3 class="mobile-section-title">Menu</h3>
+                    <div class="mobile-nav-links">
+                        <a href="index.html" class="mobile-nav-link">Home</a>
+                        <a href="index.html#event-info" class="mobile-nav-link">Over Ons</a>
+                        <a href="index.html#clothing" class="mobile-nav-link">Collectie</a>
+                        <a href="index.html#sustainability" class="mobile-nav-link">Duurzaamheid</a>
+                        <a href="contact.html" class="mobile-nav-link active">Contact</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-section">
+                    <h3 class="mobile-section-title">Contact</h3>
+                    <div class="mobile-contact-info">
+                        <a href="tel:0101234567" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span class="text-white">010-1234567</span>
+                        </a>
+                        <a href="mailto:info@vestimenta.nl" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="text-white">info@vestimenta.nl</span>
+                        </a>
+                        <a href="https://maps.google.com/?q=Kruiskade+88+Rotterdam" class="mobile-contact-item">
+                            <div class="mobile-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="text-white">Kruiskade 88, Rotterdam</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 md:pt-40 md:pb-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-display uppercase tracking-wide mb-6" data-aos="fade-up">Contact
+                </h1>
+                <p class="text-xl text-vestimenta-dark" data-aos="fade-up" data-aos-delay="100">Heb je vragen? Vul het
+                    formulier in en wij nemen snel contact met je op.<br>Of bezoek ons op Kruiskade 88, Rotterdam.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="pb-20 mt-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-5 gap-8">
+                    <div class="md:col-span-3 bg-white rounded-xl shadow-lg p-6 md:p-8" data-aos="fade-right">
+                        <h2 class="text-2xl font-bold mb-6">Stuur ons een bericht</h2>
+
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="form-label">Voornaam*</label>
+                                    <input type="text" id="firstName" class="form-input" required>
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div>
+                                    <label for="lastName" class="form-label">Achternaam</label>
+                                    <input type="text" id="lastName" class="form-input">
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="phone" class="form-label">Telefoonnummer*</label>
+                                    <input type="tel" id="phone" class="form-input" required placeholder="06-12345678">
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div>
+                                    <label for="email" class="form-label">E-mailadres*</label>
+                                    <input type="email" id="email" class="form-input" required>
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="address" class="form-label">Adres</label>
+                                <input type="text" id="address" class="form-input">
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="postalCode" class="form-label">Postcode</label>
+                                    <input type="text" id="postalCode" class="form-input" placeholder="1234 AB">
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div>
+                                    <label for="city" class="form-label">Woonplaats</label>
+                                    <input type="text" id="city" class="form-input">
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="instagram" class="form-label">Instagram-handle</label>
+                                    <input type="text" id="instagram" class="form-input" placeholder="@username">
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div>
+                                    <label for="contactPreference" class="form-label">Voorkeur contactmethode*</label>
+                                    <select id="contactPreference" class="form-select" required>
+                                        <option value="">Selecteer een optie</option>
+                                        <option value="phone">Telefoon</option>
+                                        <option value="email">E-mail</option>
+                                        <option value="instagram">Instagram</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                    <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="question" class="form-label">Vraag*</label>
+                                <textarea id="question" class="form-textarea" rows="4" required></textarea>
+                                <span class="error-message"></span>
+                                <span class="valid-indicator"><i class="fas fa-check"></i></span>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <input type="checkbox" id="privacyPolicy" class="form-checkbox mt-1" required>
+                                <label for="privacyPolicy" class="text-sm text-gray-600">
+                                    Ik ga akkoord met het <a href="#"
+                                        class="text-emerald-600 hover:underline">privacybeleid</a> van Vestimenta*
+                                </label>
+                            </div>
+
+                            <div>
+                                <button type="submit" id="submitButton" class="btn-primary w-full md:w-auto" disabled>
+                                    <span class="normal-state">Verstuur</span>
+                                    <span class="loading-state hidden">
+                                        <i class="fas fa-spinner fa-spin mr-2"></i> Versturen...
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="md:col-span-2" data-aos="fade-left">
+                        <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8">
+                            <h2 class="text-2xl font-bold mb-6">Onze gegevens</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <span class="text-emerald-600 mt-1 mr-4"><i
+                                            class="fas fa-map-marker-alt"></i></span>
+                                    <div>
+                                        <h3 class="font-semibold">Adres</h3>
+                                        <p>Kruiskade 88<br>3012 EH Rotterdam</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-emerald-600 mt-1 mr-4"><i class="fas fa-phone"></i></span>
+                                    <div>
+                                        <h3 class="font-semibold">Telefoon</h3>
+                                        <p><a href="tel:0101234567" class="hover:text-emerald-600">+31 0630066004</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-emerald-600 mt-1 mr-4"><i class="fas fa-envelope"></i></span>
+                                    <div>
+                                        <h3 class="font-semibold">E-mail</h3>
+                                        <p><a href="mailto:info@vestimenta.nl"
+                                                class="hover:text-emerald-600">info@vestimenta.nl</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+                            <iframe class="w-full h-64"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.493379132087!2d4.470102415947174!3d51.92271797970405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a619e57083%3A0x62b1d5c8e94bc762!2sKruiskade%2C%20Rotterdam!5e0!3m2!1sen!2snl!4v1656934291228!5m2!1sen!2snl"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-md mx-4 animate-appear">
+            <div class="text-center">
+                <span class="text-emerald-500 text-5xl block mb-4">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+                <h2 class="text-2xl font-bold mb-2">Bericht verstuurd!</h2>
+                <p class="text-gray-600 mb-6">Bedankt voor je bericht. We nemen zo snel mogelijk contact met je op.</p>
+                <button id="closeModal" class="btn-secondary">Sluiten</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-vestimenta-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <img src="src/assets/media/logo_notext.png" alt="Vestimenta Logo" class="h-10 mr-2 invert">
+                            <span class="text-xl font-display uppercase tracking-wider text-white">Vestimenta</span>
+                        </div>
+                        <p class="text-vestimenta-gray">Hip & duurzaam. Stijl met respect voor de planeet.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-display uppercase mb-4">Navigatie</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Home</a>
+                            </li>
+                            <li><a href="index.html#event-info"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Over</a>
+                            </li>
+                            <li><a href="index.html#clothing"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Kleding</a>
+                            </li>
+                            <li><a href="index.html#sustainability"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Duurzaamheid</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-display uppercase mb-4">Contact</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i
+                                        class="fas fa-map-marker-alt"></i></span>
+                                <span class="text-vestimenta-gray">Kruiskade 88<br>3012 EH Rotterdam</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-phone"></i></span>
+                                <span class="text-vestimenta-gray">010-1234567</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-envelope"></i></span>
+                                <span class="text-vestimenta-gray">info@vestimenta.nl</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-vestimenta-beige mt-1 mr-3"><i class="fas fa-clock"></i></span>
+                                <span class="text-vestimenta-gray">Ma-Za: 10:00 - 18:00<br>Zo: 12:00 - 17:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-vestimenta-dark border-opacity-20 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-vestimenta-gray mb-4 md:mb-0">&copy; 2025 Vestimenta - Alle rechten voorbehouden</p>
+                    <div class="flex flex-wrap justify-center space-x-6">
+                        <a href="javascript:void(0)" data-modal="privacyModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Privacy</a>
+                        <a href="javascript:void(0)" data-modal="voorwaardenModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Voorwaarden</a>
+                        <a href="javascript:void(0)" data-modal="cookiesModal"
+                            class="modal-trigger text-vestimenta-gray hover:text-vestimenta-beige transition-colors">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast-notification">
+        <span class="icon"><i class="fas fa-check-circle"></i></span>
+        <span class="message">Bericht verstuurd!</span>
+        <span class="close"><i class="fas fa-times"></i></span>
+    </div>
+
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Design Elementen</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">Kleurenpalet</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-beige"></div>
+                            <div>
+                                <p class="font-bold">Beige</p>
+                                <p class="text-sm text-gray-500">#C8B8B1</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-dark"></div>
+                            <div>
+                                <p class="font-bold text-vestimenta-dark">Donker</p>
+                                <p class="text-sm text-gray-500">#272121</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-taupe"></div>
+                            <div>
+                                <p class="font-bold">Taupe</p>
+                                <p class="text-sm text-gray-500">#BDAA9F</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-gray"></div>
+                            <div>
+                                <p class="font-bold">Grijs</p>
+                                <p class="text-sm text-gray-500">#CEC9CC</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-md bg-vestimenta-blue"></div>
+                            <div>
+                                <p class="font-bold">Blauw</p>
+                                <p class="text-sm text-gray-500">#6D7D97</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Typografie</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-sm text-gray-500 mb-2">Hoofdingen (TT Corals)</p>
+                            <p class="font-display text-3xl uppercase">VESTIMENTA</p>
+                            <p class="text-sm text-gray-500 mt-2">Gebruikt voor alle hoofdingen in hoofdletters</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-2">Basis tekst (Quicksand)</p>
+                            <p class="text-xl">Vestimenta - Hippe & duurzame mode</p>
+                            <p class="text-sm text-gray-500 mt-2">Gebruikt voor alle bodytekst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="voorwaardenModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Design Systeem</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">UI Componenten</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold mb-2">Knoppen</p>
+                            <button class="btn-primary bg-vestimenta-taupe hover:bg-vestimenta-beige my-2">Primaire
+                                knop</button>
+                            <button class="btn-secondary my-2">Secundaire knop</button>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Kaarten</p>
+                            <div
+                                class="bg-white rounded-lg shadow-soft p-3 border border-vestimenta-beige border-opacity-10">
+                                Voorbeeldkaart met schaduw en border
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Formulier elementen</p>
+                            <input type="text" class="form-input my-1 w-full" placeholder="Input veld">
+                            <select class="form-select my-1 w-full">
+                                <option>Dropdown optie</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Spacing & Animaties</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-bold mb-2">Secties</p>
+                            <p class="text-sm text-gray-600">Padding: 5rem (py-20)</p>
+                            <p class="text-sm text-gray-600">Margin tussen elementen: 2rem (my-8)</p>
+                        </div>
+                        <div>
+                            <p class="font-bold mb-2">Animaties</p>
+                            <p class="text-sm text-gray-600 mb-2">Hover effecten op knoppen en kaarten</p>
+                            <div class="flex items-center space-x-4">
+                                <div
+                                    class="transition-transform hover:-translate-y-1 duration-300 cursor-pointer p-2 bg-vestimenta-beige bg-opacity-10 rounded">
+                                    Hover me</div>
+                                <div
+                                    class="transition-all hover:shadow-lg duration-300 cursor-pointer p-2 bg-vestimenta-blue bg-opacity-10 rounded">
+                                    Shadow effect</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookiesModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-3xl mx-4 animate-appear">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-display uppercase tracking-wide">Technische Informatie</h2>
+                <button class="modal-close hover:text-vestimenta-taupe transition-colors">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-taupe">Frameworks & Libraries</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><span class="font-bold">Tailwind CSS</span> - Voor styling en responsiveness</li>
+                        <li><span class="font-bold">AOS</span> - Voor scroll animaties</li>
+                        <li><span class="font-bold">Font Awesome</span> - Voor iconen</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-display uppercase text-xl mb-4 text-vestimenta-blue">Mappenstructuur</h3>
+                    <pre class="bg-gray-100 p-4 rounded-md text-sm overflow-auto">
+                    /vestimenta/
+                    ├── public/
+                    │   ├── images/
+                    │   └── favicon.ico
+                    ├── src/
+                    │   ├── assets/
+                    │   │   ├── fonts/
+                    │   │   │   ├── Quicksand/ 
+                    │   │   │   └── tt_corals/
+                    │   │   └── media/
+                    │   │       ├── logo.png
+                    │   │       └── logo_notext.png
+                    │   ├── styles/
+                    │   │   ├── custom.css
+                    │   │   └── tailwind.css
+                    │   └── utils/
+                    │       ├── carousel.js
+                    │       ├── contactForm.js
+                    │       ├── modals.js
+                    │       ├── navigation.js
+                    │       └── toast.js
+                    ├── index.html
+                    ├── contact.html
+                    └── tailwind.config.js
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            disable: 'phone'
+        });
+    </script>
+    <script src="src/utils/navigation.js"></script>
+    <script src="src/utils/modals.js"></script>
+    <script src="src/utils/toast.js"></script>
+    <script src="src/utils/contactForm.js"></script>
+</body>
+
+</html>
